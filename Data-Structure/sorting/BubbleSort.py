@@ -41,27 +41,4 @@
 #
 #
 # print(bubble_sort(array))
-
-
-class Solution:
-    def select(self, arr, i):
-
-    # code here
-
-    def selectionSort(self, arr, n):
-        starting_index = 0
-        comparing_index = 0
-        while starting_index < len(arr) - 1:
-            if comparing_index > len(arr) - 1:
-                starting_index += 1
-                comparing_index = starting_index + 1
-
-            elif arr[starting_index] > arr[comparing_index]:
-                temp = arr[starting_index]
-                arr[starting_index] = arr[comparing_index]
-                arr[comparing_index] = temp
-
-            elif arr[starting_index] <= arr[comparing_index]:
-                comparing_index += 1
-
-        return arr
+                 
